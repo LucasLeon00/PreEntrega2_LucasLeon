@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: rgb(165, 85, 85);
+}
+
+
+#menu{
+    background-color: rgb(247, 169, 169);
+    font-family: cursive;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-style: outset;
+    border-top: solid 5px rgb(241, 63, 93);
+    border-bottom: solid 5px rgb(241, 63, 93);
+    border-left: solid 5px rgb(241, 63, 93);
+    border-right: solid 5px rgb(241, 63, 93);
+    border-radius: 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav .nav{
+    display: inline-block;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+
+.lista_2{
+    list-style: none;
+}
+
+#tabla{
+    border-radius: 15px;
+    background-color: rgb(247, 169, 169);
+    font-family: cursive;
+    color: black;
+}
+
+#tabla a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+.nav .nav-item a:hover {
+    background-color: rgb(211, 179, 241);
+}
+
+.nav .nav-item .nav{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav .nav-item:hover> .nav{
+    display: block;
+}
+
+.nav .nav{
+    padding: 0%;
+    background-color: violet;
+    width: 20px;
+    margin: 0%;
+    text-decoration: none;
+}
+
+.body_2{
+    background-color: rgb(188, 132, 240);
+}
+
+.btn .btn-default{
+    background-color: rgb(240, 88, 88);
+}
+
+.body_3{
+    background-color: rgb(235, 131, 131);
+}
+
+.form_usuario{
+    width: 400px;
+    background: rgb(88, 83, 83);
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.btn{
+    background: rgb(253, 69, 69);
+}
+
+.body_4{
+    background-color: rgb(235, 131, 131);
+}
+
+.texto_nosotros{
+    background: rgb(88, 83, 83);
+    margin: auto;
+    font-family: 'calibri';
+    width: 400px;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.imagenesProductos{
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+
+
+.titulo{
+    color: rgb(141, 30, 141);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.body_5{
+    background-color: rgb(235, 131, 131);
+}
+
+.body_5 .logo{
+    width: 300px;
+    height: 300px;
+    margin-left: 40%;
+    margin-right: 60%;
+}
+
+.body_6{
+    background-color: rgb(235, 131, 131);
+}
+
+.tabla_quehacer{
+    width: 600px;
+    background: rgb(236, 56, 56);
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    text-align: center;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "header header header" "main main aside" "imagen1_index imagen2_index aside" "footer footer footer" ;
+}
+
+
+.contenedor .header{
+    grid-area: header;
+}
+
+.contenedor .main{
+    grid-area: main;
+}
+
+
+.main{
+    width: 70%;
+    margin: 20px;
+}
+
+.aside{
+    width: 30%;
+    margin: 20px;
+    grid-column: 3/4;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: aside;
+    background: rgb(238, 238, 87);
+}
+
+.contenedor .imagen1_index,
+.contenedor .imagen2_index{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .imagen1_index{
+    grid-area: imagen1_index;
+}
+
+.contenedor .imagen2_index{
+    grid-area: imagen2_index;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
+
+
+@media screen and (max-width:768px){
+    .body{
+        background: rgb(240, 95, 95);
+    }  
+    .contenedor{
+        grid-template-areas: "header header header" "main main main" "aside aside aside" "imagen1_index imagen1_index imagen2_index" "footer footer footer" ;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .body{
+        background: rgb(188, 245, 96);
+    }  
+    .contenedor{
+        grid-template-areas: "header header header" 
+                             "main main aside" 
+                             "imagen1_index imagen2_index aside" 
+                             "footer footer footer" ;
+}
+}
+
+
+.contenedor_productos{
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "header_productos header_productos" 
+                         "imagen1_productos imagen2_productos imagen3_productos"
+                         "imagen4_productos imagen5_productos imagen6_productos"
+                         "footer_productos footer_productos footer_productos"
+}
+
+.contenedor_productos .header_productos{
+    grid-area: header_productos;
+} 
+
+
+.contenedor .imagen1_productos,
+.contenedor .imagen2_productos,
+.contenedor .imagen3_productos,
+.contenedor .imagen4_productos,
+.contenedor .imagen5_productos,
+.contenedor .imagen6_productos{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .imagen1_productos{
+    grid-area: imagen1_productos;
+}
+.contenedor .imagen2_productos{
+    grid-area: imagen2_productos;
+}
+.contenedor .imagen3_productos{
+    grid-area: imagen3_productos;
+}
+.contenedor .imagen4_productos{
+    grid-area: imagen4_productos;
+}
+.contenedor .imagen5_productos{
+    grid-area: imagen5_productos;
+}
+.contenedor .imagen6_productos{
+    grid-area: imagen6_productos;
+}
+
+
+.contenedor .footer_productos{
+    grid-area: footer_productos;
+}
+
+
+@media screen and (max-width:768px){
+    .body_5{
+        background: rgb(240, 95, 95);
+    }  
+    .contenedor_productos{
+        grid-template-areas: "header_productos header_productos" 
+                         "imagen1_productos"
+                         "imagen2_productos"
+                         "imagen3_productos"
+                         "imagen4_productos"
+                         "imagen5_productos"
+                         "imagen6_productos"
+                         "footer_productos footer_productos footer_productos"
+}
+}
+
+@media screen and (min-width:1200px){
+    .body_5{
+        background: rgb(188, 245, 96);
+    }  
+    .contenedor_productos{
+        grid-template-areas: "header_productos header_productos" 
+                         "imagen1_productos imagen2_productos imagen3_productos"
+                         "imagen4_productos imagen5_productos imagen6_productos"
+                         "footer_productos footer_productos footer_productos"
+    }
+}

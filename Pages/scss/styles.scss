@@ -1,0 +1,317 @@
+$primary-color: rgb(150, 51, 51);
+$secondary-color: rgb(128, 54, 128);
+$terciary-color: rgb(255, 179, 179);
+
+
+$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6);
+
+$limit: 10;
+$unit: 8px;
+
+@function size($value){
+    @return $value * $unit;
+
+}
+
+@mixin reset-padma {
+    padding: 0;
+    margin: 0;    
+}
+
+
+*{
+    @include reset-padma();
+    box-sizing: border-box;
+}
+
+
+.body{
+    background-color: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../scss/fondopag2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    .footer{
+        background-color: rgb(49, 45, 49);
+        margin: auto;
+        color: white;        
+    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font-size: size(2);
+}
+
+h1{
+    font-weight: bold;
+}
+
+.contenedor{
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 0 20px 2px rgb(229, 163, 163);
+    background-size: cover;
+}
+
+.nav{
+    @include reset-padma();
+    background-color: rgb(150, 51, 51);
+    list-style: none;
+    display: flex;
+    nav-item:hover{
+        display: block;
+        background: rgb(132, 127, 128);
+        flex-grow: 1;
+        text-align: center;
+        nav-link{
+            display: block;
+            padding: 15px 20px;
+            color: rgb(250, 158, 173);
+            text-decoration: none;
+        }
+    }
+}
+
+.menu {
+    color: rgb(251, 158, 251);
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+.main{
+    padding: 45px 20px;
+    text-align: center;
+    width: 80%;
+    border: 1px solid rgb(244, 196, 196);
+    margin: 0 auto;
+    background: rgb(100, 64, 64);
+    margin-top: 70px;
+    max-width: 700px;
+    font-size: medium;
+    color: white;
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+
+.imagen1_index{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.imagen2_index{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.body_4{
+    background-image: url(../scss/fondopag3.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.body_4{
+    .footer_4{
+    background-color: rgb(49, 45, 49);
+    margin: auto;
+    color: white;
+}
+}
+
+.titulo_pag4{
+    color: rgb(88, 23, 88);
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+.texto_nosotros{
+    padding: 45px 20px;
+    text-align: center;
+    width: 80%;
+    border: 1px solid rgb(244, 196, 196);
+    margin: 0 auto;
+    background: rgb(100, 64, 64);
+    margin-top: 70px;
+    max-width: 700px;
+    font-size: medium;
+    color: white;
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+    @media screen and (max-width: 540px) {
+      font-size: 12px;
+    }
+}
+
+.body_3{
+    background-image: url(../scss/imagen4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.form_usuario{
+    width: 400px;
+    background: rgb(88, 83, 83);
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.footer_3{
+    background-color: rgb(49, 45, 49);
+    margin: auto;
+    color: white;    
+}
+
+.body_5{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../scss/imagen1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.footer_productos{
+    background-color: rgb(49, 45, 49);
+    margin: auto;
+    color: white;    
+}
+
+.body_2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../scss/imagen6.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+  
+.footer_contacto{
+    background-color: rgb(49, 45, 49);
+    margin: auto;
+    color: white;    
+}
+  
+.volver_menucontacto{
+    background: black;
+    color: white;
+}
+
+.body_6{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../scss/reunion.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.footer_quehacer{
+    background-color: rgb(49, 45, 49);
+    margin: auto;
+    color: white;    
+}
+
+.tabla_quehacer{
+    width: 600px;
+    background: rgb(236, 56, 56);
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    text-align: center;
+}
+
+.titulo_contacto{
+    text-align: center;
+}
+  
+.titulo_productos{
+    text-align: center;
+}
+  
+.titulo_quehacer{
+    text-align: center;
+}
+
+.titulo_nosotros{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo_contacto2{
+    font-weight: bold;
+  }
+  
+.etiquetas{
+    font-weight: bold;
+}
+
+.imagenesproductos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.imagenesproductos{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+h2{
+    margin-top: 20%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-style: oblique;
+}
+
+
+@media(max-width:600px){
+    .body,.body_2,.body_3,.body_4,.body_5,.body_6{
+      background-color: blueviolet;
+    }
+}
+  
+@media(min-width:600px){
+    .body,.body_2,.body_3,.body_4,.body_5,.body_6{
+      background-color: rgb(175, 175, 243);
+    }
+}
