@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/logo.png">
+    <link rel="stylesheet" href="scss/styles.css">
+    <title>Carrito JS</title>
+</head>
+
+
+<body class="body_7">
+    <nav id="menu">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#" target="_blank">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html" target="_blank">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html" target="_blank">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html" target="_blank">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="ingresa.html" target="_blank">Ingresa</a></li>
+            <li class="nav-item"><a class="nav-link" href="quehacer.html">Que necesitas hacer?</a></li>
+        </ul>
+    </nav>
+    <header>
+        <nav>
+            <a href="INDEX.html" target="_blank" class="volver_menu">Volver al menu principal</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Carrito</h1>
+    </div>
+    <div class="row" id="items">     
+    </div>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+    </template>
+
+
+    <footer class="footer_productos">
+        <section>
+            <article>
+                <table id="tabla" border="1" cellpadding="4" cellspacing="4"> 
+                    <th>Atencion al cliente</th>
+                    <th>Secciones</th>
+                    <th>Productos</th>
+                    <th>Contactanos</th>
+                    <tr class="lista_2">
+                        <td>
+                            <li><a>Av. Del Libertador 6699, Recoleta, Ciudad Autonoma de Buenos Aires</a></li>
+                            <br>
+                            <li><a>(011) 4686-7409</a></li>
+                            <br>
+                            <li><a>tejidossusi@gmail.com</a></li>
+                        </td>
+                        <td>
+                            <li><a href="INDEX.html" target="_blank">Inicio</a></li>
+                            <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
+                            <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                            <li><a href="productos.html" target="_blank">Productos</a></li>
+                            <li><a href="ingresa.html" target="_blank">Ingresa</a></li>
+                            <li><a href="quehacer.html" target="_blank">Que necesitas hacer?</a></li>
+                        </td>
+                        <td>
+                            <li><a>Lanas</a></li>
+                            <li><a>Tejidos a crochet</a></li>
+                            <li><a>Tejidos a dos agujas</a></li>
+                            <li><a>Amigurumis</a></li>
+                            <li><a>Agujas</a></li>
+                        </td>
+                        <td>
+                            <li><a>Por WhatsApp al (+54) 11-2172-7947</a></li>
+                            <br>
+                            <li><a>Por telefono al (011) 4686-7409</a></li>
+                            <br>
+                            <li><a>Por Instagram al @tejidossusi</a></li>
+                        </td>
+                </table>
+            </article>
+        </section>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

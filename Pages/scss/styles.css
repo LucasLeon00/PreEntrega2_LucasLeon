@@ -320,6 +320,25 @@ h2{
 }
 
 
-/*sourceMappingURL=styles.css.map*/
+.body_7{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../scss/imagen1.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.footer_productos2{
+  background-color: rgb(49, 45, 49);
+  margin: auto;
+  color: white;    
+}
+
+.titulo_productos2{
+  text-align: center;
+  margin-top: 70px;
+  color: rgb(164, 85, 238);
+  font-size: 300%;
+}
+
 
 
